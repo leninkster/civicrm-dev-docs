@@ -197,22 +197,22 @@ The constant `CIVICRM_TEMPLATE_COMPILEDIR` is never consulted. Updating `civicrm
 #### Example 2: The public and private data are stored in separate places, akin to Drupal's public and private folders
 
 ``` php
-$civicrm_paths['civicrm.files']['path'] = '/srv/example.com/htdocs/sites/default/files/civicrm');
-$civicrm_paths['civicrm.private']['path'] = '/srv/example.com/private/civicrm');
+$civicrm_paths['civicrm.files']['path'] = '/srv/example.com/htdocs/sites/default/files/civicrm';
+$civicrm_paths['civicrm.private']['path'] = '/srv/example.com/private/civicrm';
 ```
 
 #### Example 3: Try to follow Linux FHS and override most default paths
 
 ``` php
-$civicrm_paths['civicrm.files']['path'] = '/var/www/sites/default/files/civicrm');
-$civicrm_paths['civicrm.private']['path'] = '/var/lib/civicrm');
-$civicrm_paths['civicrm.log']['path'] = '/var/log/civicrm');
-$civicrm_paths['civicrm.l10n']['path'] = '/var/lib/civicrm/l10n');
-$civicrm_paths['civicrm.compile']['path'] = '/var/run/civicrm-compile');
-$civicrm_paths['civicrm.root']['path'] = '/usr/share/php/civicrm-core');
-$civicrm_paths['civicrm.root']['url'] = 'https://example.com/civicrm-core'); // with httpd path alias
-$civicrm_paths['cms.root']['path'] = '/usr/share/php/drupal-core');
-$civicrm_paths['cms.root']['url'] = 'https://example.com/'); // with httpd path alias
+$civicrm_paths['civicrm.files']['path'] = '/var/www/sites/default/files/civicrm';
+$civicrm_paths['civicrm.private']['path'] = '/var/lib/civicrm';
+$civicrm_paths['civicrm.log']['path'] = '/var/log/civicrm';
+$civicrm_paths['civicrm.l10n']['path'] = '/var/lib/civicrm/l10n';
+$civicrm_paths['civicrm.compile']['path'] = '/var/run/civicrm-compile';
+$civicrm_paths['civicrm.root']['path'] = '/usr/share/php/civicrm-core';
+$civicrm_paths['civicrm.root']['url'] = 'https://example.com/civicrm-core'; // with httpd path alias
+$civicrm_paths['cms.root']['path'] = '/usr/share/php/drupal-core';
+$civicrm_paths['cms.root']['url'] = 'https://example.com/'; // with httpd path alias
 ```
 
 ### Tip: Programmatically using [civicrm.files]
